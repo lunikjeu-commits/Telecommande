@@ -25,6 +25,7 @@ class CodeStore(context: Context) {
         version++
     }
 
+    @JvmName("savePrefix")
     fun setPrefix(v: Int) {
         p.edit().putInt("prefix", v).apply()
         prefix = v
